@@ -1,19 +1,11 @@
-像span行元素{ 1.本身设置宽高无效，line-height也无效；
+像span行元素{ 1.本身设置宽高无效，line-height也无效（在导航栏设置可以使其上下居中？）；
 	2.可以使用display：blockk变为块元素，就可以设置宽高，为块，line-height有效。
 	3.当inline-block时，宽高都可以设置，当line-height时[表示文字在高上居中](有效：足够大)。
 	【总结】：1.行元素设置宽/高/line-height都无效；2.block/inline-block设置三种都有效。
 
 	1.行元素 设置左右margin有效，上下无效，padding都有效。
+	2.line-height可以让单行文本垂直居中
 }
-
-
-
-父级元素清除浮动{
-	1.父元素没有设置高时，其下面的子元素浮动（脱离文档流）后父容器就会探缩；
-	2.为什么清除浮动要用after伪元素？
-	
-}
-
 
 
 position{静态定位：static(文档流中，)
@@ -23,14 +15,32 @@ position{静态定位：static(文档流中，)
 }
 
 
+css对于card-group之类的{
+	nth-child(odd)为奇数
+	first-child第一个
+	nth-child(2)第二个
+}
 
-h/p外面是否有wrap
+
+父级元素清除浮动{
+	1.父元素没有设置高时，其下面的子元素浮动（脱离文档流）后父容器就会探缩；
+	2.为什么清除浮动要用after伪元素？
+	
+}
 
 reansform:rotate();旋转
 
-max-width(怎样居中)
-三大块外面有没有group
-nth-child(odd)【最后1234伪类】
+
+h/p外面是否有wrap{
+	有。在一个整体大div中：h/p外面用一个div包裹，样式更整齐
+}
+
+第一部分（浮动部分）{
+	1.小细节：三个之间有小空隙（font-size: 0[因为字体大小不同导致行高不同]）；
+	2.max-width(怎样居中:设置relative位置)第一部分图片旁边的文字
+}
+
+
 
 
 
