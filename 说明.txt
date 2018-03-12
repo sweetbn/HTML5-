@@ -4,6 +4,8 @@
 	【总结】：1.行元素设置宽/高/line-height都无效；2.block/inline-block设置三种都有效。
 
 	1.行元素 设置左右margin有效，上下无效，padding都有效。
+	2.当没有内容字的时候，设置line-height无效（line-height指行高，有字才有效）
+	3.写float与block效果相同
 }
 
 
