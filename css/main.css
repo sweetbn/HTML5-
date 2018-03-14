@@ -38,6 +38,9 @@ nav ul li a{
 	line-height: 50px;
 	color: #fff;
 }
+nav ul li a:hover{
+	color: #222;
+}
 .navbar{
 	/*background-color: #555;*/
 	height: 600px;
@@ -243,6 +246,62 @@ footer{
 	background-size: cover;
 	background-position: center,center;
 
+}
+
+.mask
+{
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.3);
+}
+
+#sidebar
+{
+	/*display: none;*/
+	position: fixed;
+	top: 0;
+	right: -300px;
+	bottom: 0;
+	width: 300px;
+	background: #333;
+	padding: 20px 0;
+	transition: right 0.5s;
+}
+#sidebar ul
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#sidebar ul a
+{
+	color: #fff;
+	text-decoration: none; 
+	padding: 10px 30px;
+	display: inline-block;
+	width: 100%
+}
+
+#sidebar ul a:hover
+{
+	background: #444;
+}
+.side_btn
+{
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	background: #999;
+	border: 1px solid #999;
+	display: none;/*不用触发$(window).trigger('scroll');*/
+	cursor: pointer;
+	width: 100px;
+	height: 40px;
+	color: #fff;
 }
 
 
